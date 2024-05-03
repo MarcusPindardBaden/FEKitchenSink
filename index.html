@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<!--#Homepage, index should be the homepage always-->
+
+<html>
+<head>
+    <title>FE Blog Practice</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href = "page2.html">
+        <img src="images/Swivel-logo-circle.png" height="100" alt="Swivel Studios Logo image" title="Swivel Studios Logo">
+    </a>
+
+    <!--Font Formatting Section-->
+    <h1>This is gonna be a practice run of building a blog page</h1>
+    <hr>
+    <h2>Some of this code will be awful, so please be patient and feedback nicely </h2>
+    <br>
+    <div>
+    <h3>Blog Article 1</h3>
+        <p>
+            <b>Society</b> is on it's knees</p>
+        <p>
+            Society is on it's <i>knees</i></p>
+        <p>
+            <ins>Society</ins> is on it's knees</p>
+        <p>
+            <big>Society is on it's knees</big></p>
+        <p>
+            <span style="color:blueviolet">Society</span> is on it's knees</p>
+        <p>
+            <small>Society is on</small> it's knees</p>
+        <p>
+            <meta name = "testHelper">
+            Society <sub>is on it's</sub> knees</p>
+        <p>
+            Society <del>is</del> on <mark>it's</mark> <sup>knees</sup></p>
+    </div>
+
+
+    <!--Lists Section-->
+    <h4>Swivel key areas</h4>
+    <ul>
+        <li>Product</li>
+        <li>Marketing</li>
+        <li>Website</li>
+        <li>Finance</li>
+            <ul>
+                <li>Budget</li>
+                <li><i>Sales</i></li>
+            </ul>
+    </ul>
+
+    <h4>Steps to go live</h4>
+    <ol type="A">
+        <li>Test samples</li>
+        <li>Reorder Samples</li>
+        <li>Photoshoot</li>
+        <li>Design and build website</li>
+        <li>Plan launch event</li>
+        <li>Invite influencers and network to event</li>
+        <li>Launch event</li>
+        <li>Website Go-live</li>
+    </ol>
+
+
+    <h4>Description List</h4>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Adds structure to a webpage</dd>
+        <dt>CSS</dt>
+        <dd>Adds Style to webpage</dd>
+    </dl>
+
+
+
+    <!--Table-->
+    <h3>Opening Hours</h3>
+    <table bgcolor="teal"  width = "525">
+        <tr bgcolor="navy" style="color:aliceblue">
+            <th  width="75">Weekday</th>
+            <th width="75">Monday</th>
+            <th width="75">Tuesday</th>
+            <th width="75">Wednesday</th>
+            <th width="75">Thursday</th>
+            <th width="75">Friday</th>
+            <th width="75">Saturday</th>
+            <th width="75">Sunday</th>
+        </tr>
+        <tr bgcolor="cyan" align="center" style="color:rgb(9,2,64)">
+            <td>Opening hour</td>
+            <td>9</td>
+            <td>9</td>
+            <td>9</td>
+            <td>9</td>
+            <td>9</td>
+            <td>10</td>
+            <td>12</td>
+        </tr>
+        <tr style="background-color:#92e8f7; color:rgb(9,2,64)" align="center" >
+            <td>Closing hour</td>
+            <td>17</td>
+            <td>17</td>
+            <td>17</td>
+            <td>17</td>
+            <td>18</td>
+            <td>18</td>
+            <td>15</td>
+        </tr>
+    </table>
+
+            
+   
+    <!--Media Content-->
+    <br>
+    <audio controls muted>
+        <source src = "Tunes/Brand new whip get rhodes keys (mix 3).mp3">
+        <source src="Tunes/hip hop n chill (sped up) mark 2.mp3">
+        This browser does not support HTML5 audio
+    </audio>
+    <a href="mailto:pindardbadenmarcus@gmail.com">
+        Email me 
+    </a>
+    <br>
+    <video controls autoplay loop src="videos/film reel vintage 2.mp4" width="1000"></video>
+    <br>
+
+    <!--iframe Section-->
+    <iframe src="ad.html"  width="1000" height="500" style="border: 100;"></iframe>
+
+    <br>
+    <!--Buttons-->
+    <a href="ad.html" height="1000" width="500">
+        <button style="background-color: aquamarine;color: crimson; border-radius: 10px; box-shadow: 20px;" >
+            Button-Button
+        </button>
+    </a>
+    <br>
+    <button onclick="doSomething()" style="background-color: blue;color: crimson; border-radius: 50px; box-shadow: 20px;" >
+        Button 2
+    </button>
+    <br>
+    <p id="test">hello</p>
+
+    <script>
+        function doSomething(){
+            document.getElementById("test").innerHTML="Goodbye";
+        }
+    </script>
+    <br>
+
+    <!--Forms-->
+    <form action="action_page.php" method="POST" style="background-color: #92e8f7;">
+        <h2 style="color:black">Sign Up For the Newsletter</h2>
+        <label for="fname">
+            First Name:
+        </label>
+        <input type="text" id="fname" name="fname" placeholder="Bob">
+        <label for="lname">
+            Last Name:
+        </label>
+        <input type="text" id="lname" name="lname" placeholder="Vance">
+        <br>
+        <label for="lname">
+            Email address:
+        </label>
+        <input type="email" id="email" name="email" placeholder="BobVance@VanceRefrigeration.com" required>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

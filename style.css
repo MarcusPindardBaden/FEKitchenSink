@@ -1,0 +1,108 @@
+body{
+    background: linear-gradient(to bottom,antiquewhite, skyblue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Lora, sans-serif;
+    border:2px;
+    /* background-image: url('images/Swivel-logo-circle.png');
+    background-position:center;
+    background-size:cover; */
+}
+h1{
+    /* background: linear-gradient(to top,antiquewhite, skyblue); */
+    color:blueviolet;
+    font-family: "press Start 2P";
+    font-weight: 600;
+    text-shadow: 2px 2px 2px  skyblue;
+}
+img{
+    /* float:left; */
+}
+
+#p1{
+    /* background: linear-gradient(to top,antiquewhite, skyblue); */
+    color:darkolivegreen;
+    border-style: dotted;
+    border-width: 10px;
+    border-color: blueviolet;
+    border-radius: 5px;
+    padding:5px;
+}
+
+.even{
+    /* background: linear-gradient(to top,antiquewhite, skyblue); */
+   border-style:groove;
+   border-radius: 5px;
+   border-width:5px;
+}
+
+#otherBox{
+    border:5px solid;
+    width:200px;
+    height:200px;
+    background-color: brown;
+    font-size:200px;
+    text-align:center;
+    animation: myColorChange;
+    animation-duration: 5s;
+    animation-play-state: running;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out
+    /* transform: translate(50px, 50px);   */
+}
+
+@keyframes mySlide{
+    from{margin-left: 100%}
+    to{margin-left:0%}
+}
+
+@keyframes myOpacity{
+    100%{opacity: 0;}
+}
+
+@keyframes myScale{
+    50%{transform: scale(0.5, 0.5);}
+}
+
+@keyframes myColorChange{
+    0%{background-color: red;}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    80%{background-color: blue;}
+    100%{background-color: purple;}
+}
+
+#otherBox2{
+    border:5px solid;
+    width:300px;
+    height:150px;
+    background-color: yellow
+}
+
+.box{
+    border: 5px solid;
+    width:750px;
+    height:500px;
+    font-size: 22px;
+    text-align: center;
+    color:antiquewhite;
+    background-color: darkolivegreen;
+    /* padding:40px; */
+    /* float: right; */
+}
+
+ a:link{
+    color:blueviolet;
+ }
+
+ a:visited{
+    color:grey;
+}
+a:hover{
+    color:blue;
+}
+
+li:nth-child(3n){
+    background-color:yellow;
+}
